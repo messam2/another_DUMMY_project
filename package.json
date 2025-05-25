@@ -11,7 +11,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:my-extension.helloWorld"
+    "onCommand:my-extension.helloWorld",
+    "onView:myExtension.webViewPanel"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -20,7 +21,16 @@
         "command": "my-extension.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "myExtension.webViewPanel",
+          "name": "My WebView Panel",
+          "type": "webview"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

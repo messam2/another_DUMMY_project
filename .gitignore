@@ -1,0 +1,21 @@
+# Dependencies
+/node_modules/
+
+# Build output
+/out/
+
+# VS Code Test Runner
+.vscode-test/
+
+# Coverage cache
+.nyc_output/
+
+# IDE specific files
+.DS_Store
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# TypeScript cache
+*.tsbuildinfo

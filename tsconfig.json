@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020", // Adjusted target to es2020 for modern JS features, align with typical VS Code extension dev
+    "outDir": "out",
+    "rootDir": "src",
+    "sourceMap": true,
+    "strict": true,
+    "lib": [        // Added "lib" to specify standard libraries available
+      "es2020"
+    ],
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules
+    "skipLibCheck": true // Skips type checking of declaration files
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode-test"
+  ]
+}
